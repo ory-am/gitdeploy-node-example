@@ -1,20 +1,20 @@
 ## Gitdeploy node example
 
-This is a NodeJS example app for [gitdeploy.io](https://gitdeploy.io). It is based on *NodeJS Chat (MIT License)*.
+This is a NodeJS example for [gitdeploy.io](https://gitdeploy.io) based on *NodeJS Chat under  (MIT License)*.
 
 [![Deploy gitdeploy-node-example via gitdeploy.io](https://img.shields.io/badge/gitdeploy.io-deploy%20gitdeploy--node--example/master-green.svg)](https://www.gitdeploy.io/deploy?repository=https%3A%2F%2Fgithub.com%2Fory-am%2Fgitdeploy-node-example.git)
 
 ---
 
-## NodeJS Chat (MIT License)
+## Node.js Chat (MIT License)
 
-A node js chat app using web sockets (socket.io)
+A Node.js chat app using web sockets (socket.io)
 
-##Run Locally
+##Run Local
 
-Install all the dependencies:
+Install all dependencies:
 
-    npm install (you may need to prefix this with sudo if you're on Mac)
+    npm install (you may need to prefix this with <sudo> if you're on Mac)
 
 Run the app:
 
@@ -22,31 +22,31 @@ Run the app:
 
 Then navigate to `http://localhost:3000`
 
-##Signing up, and deploying to Nodejitsu
+##Sign up, and deploy to Nodejitsu
 
 ###Documentation
 
-The documenation was available on the front page (right under the sign up for free button): https://www.nodejitsu.com/getting-started/
+The documenation is available on the front page, under the sign up for free button: https://www.nodejitsu.com/getting-started/
 
 Install the Nodejitsu Package
 
-    npm install jitsu -g (you may need to prefix this with sudo if you're on Mac)
+    npm install jitsu -g (you may need to prefix this with sudo for MAC OSX)
 
 Register via the command line:
 
-    jitsu signup (yes you can sign up via the command line)
+    jitsu signup (yes, you can sign up via the command line)
 
-You'll get a confirmation email with a command to type in:
+You will get a confirmation email with a command to input:
 
     jitsu users confirm [username] [confirmation-guid]
 
-If you've already registered, you can login with:
+If you already registered, login with:
 
     jitsu login
 
-After you confirm your email, you can login (the `confirm` command should prompt you to log in).
+After you confirm your email, you can login. The `confirm` command should prompt you to login.
 
-Change the `subdomain` value in `package.json`, to reflect the url you want to deploy to:
+Change the `subdomain` value in `package.json`, to reflect the target deploy URL:
 
     {
       "name": "nodejs-chat",
@@ -64,11 +64,11 @@ And your app should be up on Nodejitsu.
 
 ###Documentation
 
-From heroku.com, click Documentation, then click the Getting Started button, then click Node.js from the list of options on the left...which will take you here: https://devcenter.heroku.com/articles/nodejs 
+From heroku.com, click "Documentation", then click the "Getting Started" button, then click "Node.js" from the list of options on the left, which will take you here: https://devcenter.heroku.com/articles/nodejs 
 
-Install Heroku toolbelt from here: https://toolbelt.heroku.com/
+Install Heroku toolbelt from: https://toolbelt.heroku.com/
 
-Sign up via the website (no credit card required).
+Sign up via the website without any credit card requirement.
 
 Login using the command line tool:
 
@@ -96,19 +96,21 @@ And your app should be up on Heroku.
 
 ###Documentation
 
-From windowsazure.com, click Documentation, click Developer Center, click node.js, then click the Learn More button which will take you here:
+From windowsazure.com, click "Documentation", click "Developer Center", click "node.js", then click the "Learn More" button which will take you here:
 
-http://www.windowsazure.com/en-us/develop/nodejs/tutorials/create-a-website-(mac)/ (if you're on a Mac, looks like the link is contextual)
+http://www.windowsazure.com/en-us/develop/nodejs/tutorials/create-a-website-(mac)/ (on Mac, the link appears to be contextual)
 
 Install the command line tools from here:
 
-http://www.windowsazure.com/en-us/downloads/#cmd-line-tools (on Windows, be sure to install the cross platform command line interface...not the powershell version)
+http://www.windowsazure.com/en-us/downloads/#cmd-line-tools 
 
-From the command line, first download your publish settings (this will redirect you to a website):
+for Windows, install the cross platform command line interface; not the powershell version.
+
+From the command line, first download your publish settings triggering a website redirect:
 
     azure account download
 
-After the `.publishsettings` file is downloaded, you'll need to import it:
+After the `.publishsettings` file download, you import it:
 
     azure acount import %pathtofile%
 
@@ -116,11 +118,11 @@ Next create the site, with a git backed repository:
     
     azure site create %uniquesitename% --git
 
-Deploy site:
+Deploy the site:
 
     git push azure master
 
-List of your websites:
+Create a report of your websites:
 
     azure site list
 
